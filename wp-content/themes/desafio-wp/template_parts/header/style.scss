@@ -1,0 +1,40 @@
+.header {
+    width: 100%;
+    z-index: 99999;
+    transition: 600ms ease-in-out top;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(40px);       
+    &.sticky {
+        position: fixed;
+        top: -100%;
+        &.stuck {
+            top: 0;
+        }
+    }
+    .container {
+        padding-top: 18px;
+        padding-bottom: 18px;
+        .navigation {
+            .menu {
+                gap: 0 45px;
+                .menu-item {
+                    letter-spacing: 0.57px;
+                    @include toRem(font-size, 19);
+                    color: white;
+                    &[class*="current"] {
+                        color: color(secondary, base);
+                    }
+                    .nav-link {
+                        color: inherit;
+                        &:hover {
+                            color: color(secondary, base);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.movie-card {
+    .inner {
+        cursor: pointer;
+        gap: 15px 0;
+        letter-spacing: -0.3px;
+        &:hover {
+            .title {
+                color: color(secondary, base);
+            }
+        }
+        .title {
+            @include toRem(font-size, 20);
+        }
+        .thumbnail {
+            object-fit: cover;
+            border-radius: 3px;
+            height: 260px;
+            width: 100%;
+        }
+    }
+}

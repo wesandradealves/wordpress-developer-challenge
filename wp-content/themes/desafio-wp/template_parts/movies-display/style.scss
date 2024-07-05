@@ -1,0 +1,36 @@
+.movies {
+    gap: 60px 0;
+    padding-top: 60px;
+    @media screen and (min-width: $screen-md-min) {
+        padding-top: 100px;
+    }
+    &-display {
+        .container {
+            gap: 25px 0;
+            .movies-grid,
+            .slick-list {
+                margin: 0 -10px;
+                .slick-track {
+                    .slick-slide {
+                        padding: 0 10px;
+                    }
+                }                
+            }
+            .movies-grid {
+                margin-bottom: -70px;
+                .movie-card {
+                    padding: 0 10px;
+                    margin-bottom: 70px;
+                }
+            }
+            > .title {
+                letter-spacing: -1px;
+                color: color(secondary, base);
+                @include toRem(font-size, 20);
+                @media screen and (min-width: $screen-md-min) {
+                    @include toRem(font-size, 30);
+                }
+            }
+        }
+    }    
+}

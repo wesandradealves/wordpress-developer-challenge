@@ -1,0 +1,29 @@
+/*! 
+    Theme Name: Play (Wesley Alves)
+    Theme URI: https://github.com/wesandradealves/wordpress-developer-challenge
+    Author:  Wesley Alves
+    Author URI: https://github.com/wesandradealves
+    Version: 1.0
+    Text Domain: bx-desafio
+    Global Prefix: bx_desafio_
+*/
+@import 'breakpoints';
+@import 'fonts';
+@import 'colors';
+@import 'util';
+@import 'reset';
+@import 'objects';
+@import 'general';
+
+// Components
+@import '../../../template_parts/header/style';
+@import '../../../template_parts/footer/style';
+@import '../../../template_parts/banner/style';
+@import '../../../template_parts/movie-card/style';
+@import '../../../template_parts/movies-display/style';
+
+// Pages
+@import './pages/home';
+@import './pages/404';
+@import './pages/archive';
+@import './pages/single';

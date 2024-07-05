@@ -1,0 +1,54 @@
+.single {
+    .main {
+        padding-top: 60px;
+        @media screen and (min-width: $screen-lg-min) {
+            padding-top: 140px;
+        }
+        #primary {
+            gap: 74px 0;
+            .heading, .content {
+                .container {
+                    max-width: 1080px;
+                    gap: 24px 0;
+                }
+            }
+            .video-player {
+                .container {
+                    @media screen and (max-width: $screen-lg-min) {
+                        padding: 0;
+                        max-width: initial;
+                    }
+                }
+                .video-display {
+                    height: 0;
+                    background-position: center center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    padding: 0 0 72%;
+                    position: relative;
+                    cursor: pointer;
+                    &::after {
+                        content: '';
+                        background-color: rgba(0,0,0,.7);
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        z-index: 1;
+                        transition: 500ms ease all;
+                    }
+                    &:hover::after {
+                        opacity: .5;
+                    }
+                    svg {
+                        position: absolute;
+                        top: calc(50% - 45px);
+                        left: calc(50% - 45px);
+                        z-index: 2;
+                    }
+                }                
+            }
+        }
+    }
+}

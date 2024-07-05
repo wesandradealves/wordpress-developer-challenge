@@ -1,0 +1,44 @@
+.archive {
+    .taxonomy-heading {
+        &-inner {
+            gap: 15px 0;
+        }
+        position: relative;
+        .title {
+            letter-spacing: -1px;
+            color: color(secondary, base);
+            @include toRem(font-size, 20);
+            @media screen and (min-width: $screen-md-min) {
+                @include toRem(font-size, 30);
+            }
+        }
+        &.stuck {
+            .taxonomy-heading-inner {
+                @media screen and (min-width: $screen-lg-min) {
+                    position: fixed;
+                    width: calc(50% - 140px);
+                    @media screen and (min-width: $screen-xl-min) {
+                        width: calc(50% - 320px);
+                    }                        
+                }                
+            }
+        }
+    }
+    .movies {
+        > .container {
+            .container {
+                padding: 0;
+            }
+            > * {
+                &:first-child {
+                    @media screen and (min-width: $screen-md-min) {
+                        padding-right: 80px;
+                        @media screen and (min-width: $screen-xl-min) {
+                            padding-right: 170px;
+                        }                        
+                    }
+                }
+            }
+        }
+    }
+}

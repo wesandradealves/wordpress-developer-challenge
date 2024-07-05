@@ -1,0 +1,1 @@
+<a class="btn primary <?php echo $args['classes']; ?>" href="<?php echo $args['href']; ?>"><?php echo $args['label']; ?></a>

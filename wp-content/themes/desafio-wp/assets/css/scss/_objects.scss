@@ -1,0 +1,28 @@
+.post-info {
+    gap: 0 10px;  
+}
+
+.tag {
+    border-radius: 3px;
+    padding: 3px 36px;
+    border: 1px white solid;
+    color: white;
+    text-align: center;
+    a {
+        color: inherit;
+    }
+    &:hover {
+        background-color: white;
+        color: color(primary, light);
+    }
+}  
+
+.btn {
+    background-color: color(secondary, base);
+    color: white;
+    border-radius: 3px;
+    letter-spacing: 0.54px;
+    @include toRem(font-size, 18);
+    padding: 15px 50px 12px;
+    text-align: center;
+}
