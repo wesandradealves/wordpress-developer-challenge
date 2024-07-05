@@ -1,0 +1,30 @@
+@keyframes stick {
+    from {
+        bottom: -100%;
+    }
+
+    to {
+        bottom: 0;
+    } 
+}
+
+.bottom-bar {
+    background: rgba(0, 0, 0, .8);
+    padding: 15px 40px;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    gap: 0 60px;
+    color: white;
+    animation: stick 250ms forwards;
+    .nav-link {
+        gap: 10px 0;
+        color: inherit;
+        @include toRem(font-size, 14);
+        img {
+            height: 22px;
+        }
+    }
+}
