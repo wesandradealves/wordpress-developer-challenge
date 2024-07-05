@@ -12,7 +12,7 @@
                     </div>
                 </div>
 
-                <!-- <?php 
+                <?php 
                     if(get_field("bx_play_video_ID")) :
                         ?>
                         <div class="video-player">
@@ -33,7 +33,7 @@
                         </div>                    
                         <?php 
                     endif; 
-                ?> -->
+                ?> 
 
                 <div class="content">
                     <div class="container">
